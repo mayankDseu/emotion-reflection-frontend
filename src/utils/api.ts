@@ -1,7 +1,9 @@
-// src/utils/api.ts
+
+const BASE_URL = import.meta.env.VITE_SERVER_API_URL;
+
 export async function postReflection(text: string) {
-  const baseUrl= `https://emotion-reflection-backend.onrender.com`
-  const response = await fetch(`${baseUrl}/analyze`, {
+  
+  const response = await fetch(`${BASE_URL}/analyze`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ text }),
