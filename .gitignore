@@ -1,0 +1,24 @@
+# 🚫 Node modules – huge & auto-generated
+node_modules/
+
+# ⚙️ Build output
+dist/
+
+# 💻 Local environment config
+.env
+.env.local
+.env.*.local
+
+# Logs & cache
+*.log
+.vite/
+.cache/
+.next/
+
+# macOS / system stuff
+.DS_Store
+Thumbs.db
+
+# IDE folders
+.vscode/
+.idea/
